@@ -12,8 +12,12 @@ li{
     list-style: none;
 }
 
-a{
-    font-size: 20px;
+.header{
+    background-color: grey;
+}
+
+#logo{
+    font-size: 30px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -21,6 +25,7 @@ a{
 .main-content{
     display: grid;
     grid-template-columns: 5px 1fr 5px 1fr 5px;
+    grid-template-rows: 1fr 5px 1fr;
 }
 
 .courses{
@@ -28,6 +33,7 @@ a{
     padding: 0px 15px;
     border-radius: 15px;
     grid-column: 2/3;
+    grid-row: 1/4;
 }
 
 .courses h2{
@@ -39,8 +45,26 @@ a{
     display: inline-block;
     border-radius: 15px;
     grid-column: 4/5;
+    grid-row: 1/2;
+    padding: 0px 5px;
 }
 
 .soprovagdenie h2{
+    text-align: center;
+}
+
+.consultation{
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 15px;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding: 0px 5px;
+}
+.consultation h2{
+    text-align: center;
+}
+
+.consultation p {
     text-align: center;
 }
