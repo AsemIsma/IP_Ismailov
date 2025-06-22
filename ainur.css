@@ -68,3 +68,15 @@ li{
 .consultation p {
     text-align: center;
 }
+
+.telegram{
+    border-radius: 50%;
+}
+
+.instagram{
+    border-radius: 18px;
+}
+
+.icon{
+    width: 50px;
+}
