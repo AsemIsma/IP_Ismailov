@@ -8,8 +8,39 @@ body{
     border: solid black 1px;
 }
 
+li{
+    list-style: none;
+}
+
 a{
     font-size: 20px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 5px 1fr 5px 1fr 5px;
+}
+
+.courses{
+    border: solid black 1px;
+    padding: 0px 15px;
+    border-radius: 15px;
+    grid-column: 2/3;
+}
+
+.courses h2{
+    text-align: center;
+}
+
+.soprovagdenie{
+    border: solid 1px black;
+    display: inline-block;
+    border-radius: 15px;
+    grid-column: 4/5;
+}
+
+.soprovagdenie h2{
+    text-align: center;
 }
