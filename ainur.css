@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+.header{
+    border: solid black 1px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
