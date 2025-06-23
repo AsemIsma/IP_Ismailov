@@ -1,18 +1,20 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: aliceblue;
+    background-color: oklch(98.4% 0.003 247.858);
     font-family: 'Courier New', Courier, monospace;
-    color: oklch(70.4% 0.04 256.788);
+    color: oklch(37.2% 0.044 257.287);
 }
 
 li{
     list-style: none;
 }
 
+/* menu */
+
 .header{
     border: solid oklch(20.8% 0.042 265.755) 1px;
-    background-color: oklch(44.6% 0.043 257.281);
+    background-color: oklch(37.2% 0.044 257.287);
     height: 40px;
     position: fixed;
     margin-top: -40px;
@@ -23,7 +25,16 @@ li{
     font-size: 30px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    color: oklch(70.4% 0.04 256.788);
+    color: oklch(98.4% 0.003 247.858);
+}
+
+/* main content */
+
+.introdaction{
+    text-indent: 20px;
+    grid-row: 1/2;
+    grid-column: 2/5;
+    padding: 0px 20px;
 }
 
 .main-content{
@@ -32,12 +43,6 @@ li{
     display: grid;
     grid-template-columns: 5px 1fr 5px 1fr 5px;
     grid-template-rows: minmax(100px, auto) 1fr 5px 1fr minmax(50px, auto);
-}
-
-.introdaction{
-    grid-row: 1/2;
-    grid-column: 2/5;
-    padding: 0px 20px;
 }
 
 .courses{
@@ -89,6 +94,12 @@ li{
     background-color: rgba(98, 116, 142, 0.193);
 }
 
+/* footer-contact */
+
+.contact{
+    display: inline-block;
+}
+
 .telegram{
     border-radius: 50%;
 }
@@ -98,5 +109,7 @@ li{
 }
 
 .icon{
+    margin: 25px 5px;
     width: 50px;
+    float: right;
 }
