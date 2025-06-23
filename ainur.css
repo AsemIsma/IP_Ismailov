@@ -135,7 +135,7 @@ li{
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr minmax(10px, auto) 1fr minmax(10px, auto) 1fr;
+    grid-template-columns: 1fr minmax(10px, auto) 1fr minmax(10px, auto) minmax(100px, auto);
 }
 
 .contact{
