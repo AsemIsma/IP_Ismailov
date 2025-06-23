@@ -28,6 +28,10 @@ li{
     color: oklch(98.4% 0.003 247.858);
 }
 
+#logo:hover{
+    color: oklch(70.4% 0.04 256.788);
+}
+
 /* main content */
 
 .introdaction{
@@ -98,7 +102,7 @@ li{
 
 .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(10px, auto) 1fr minmax(10px, auto) 1fr;
 }
 
 .contact{
@@ -109,6 +113,15 @@ li{
 .address{
     display: inline-block;
     grid-column: 3/4;
+}
+
+.address-link{
+    text-decoration: none;
+    color: oklch(70.4% 0.04 256.788);
+}
+
+.address-link:hover{
+    color: oklch(37.2% 0.044 257.287);
 }
 
 .telegram{
