@@ -19,6 +19,8 @@ li{
     position: fixed;
     margin-top: -40px;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, auto) 100px;
 }
 
 #logo{
@@ -26,10 +28,41 @@ li{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     color: oklch(98.4% 0.003 247.858);
+    grid-column: 1/2;
 }
 
 #logo:hover{
     color: oklch(70.4% 0.04 256.788);
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  grid-column: 3/4;
+}
+
+.dropbtn {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* main content */
