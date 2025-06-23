@@ -2,10 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    color: oklch(44.6% 0.043 257.281);
 }
 
 .header{
-    border: solid black 1px;
+    border: solid oklch(20.8% 0.042 265.755) 1px;
 }
 
 li{
@@ -13,27 +15,40 @@ li{
 }
 
 .header{
-    background-color: grey;
+    background-color: oklch(44.6% 0.043 257.281);
+    height: 40px;
+    position: fixed;
+    margin-top: -40px;
+    width: 100%;
 }
 
 #logo{
     font-size: 30px;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+    color: oklch(70.4% 0.04 256.788);
 }
 
 .main-content{
+    margin-top: 40px;
+    background-image: url(https://png.pngtree.com/background/20220731/original/pngtree-minimalist-white-background-picture-image_1908437.jpg);
     display: grid;
     grid-template-columns: 5px 1fr 5px 1fr 5px;
-    grid-template-rows: 1fr 5px 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr 5px 1fr minmax(50px, auto);
+}
+
+.introdaction{
+    grid-row: 1/2;
+    grid-column: 2/5;
+    padding: 0px 20px;
 }
 
 .courses{
-    border: solid black 1px;
+    border: solid oklch(44.6% 0.043 257.281) 1px;
     padding: 0px 15px;
     border-radius: 15px;
     grid-column: 2/3;
-    grid-row: 1/4;
+    grid-row: 2/5;
 }
 
 .courses h2{
@@ -41,11 +56,11 @@ li{
 }
 
 .soprovagdenie{
-    border: solid 1px black;
+    border: solid 1px oklch(44.6% 0.043 257.281);
     display: inline-block;
     border-radius: 15px;
     grid-column: 4/5;
-    grid-row: 1/2;
+    grid-row: 2/3;
     padding: 0px 5px;
 }
 
@@ -55,10 +70,10 @@ li{
 
 .consultation{
     display: inline-block;
-    border: solid 1px black;
+    border: solid 1px oklch(44.6% 0.043 257.281);
     border-radius: 15px;
     grid-column: 4/5;
-    grid-row: 3/4;
+    grid-row: 4/5;
     padding: 0px 5px;
 }
 .consultation h2{
