@@ -96,8 +96,19 @@ li{
 
 /* footer-contact */
 
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .contact{
     display: inline-block;
+    grid-column: 1/2;
+}
+
+.address{
+    display: inline-block;
+    grid-column: 3/4;
 }
 
 .telegram{
@@ -111,5 +122,8 @@ li{
 .icon{
     margin: 25px 5px;
     width: 50px;
-    float: right;
+}
+
+.icons{
+    grid-column: 5/6;
 }
