@@ -3,6 +3,7 @@ body{
     padding: 0px;
     background-color: oklch(98.4% 0.003 247.858);
     color: oklch(37.2% 0.044 257.287);
+    scroll-behavior: smooth;
 }
 
 li{
