@@ -236,7 +236,7 @@ li{
 
 @media (max-width: 600px) {
  .footer{
-    grid-template-columns: minmax(50px, auto) minmax(5px, auto) minmax(50px, auto) minmax(5px, auto) minmax(50px, auto);
+    grid-template-columns: minmax(60px, auto) minmax(5px, auto) minmax(50px, auto) minmax(5px, auto) minmax(50px, auto);
  }
  
  .instagram{
@@ -245,5 +245,9 @@ li{
 
  .icon{
     width: 30px;
+ }
+
+ body{
+    color: black;
  }
 }
