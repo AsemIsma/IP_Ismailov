@@ -233,3 +233,17 @@ li{
 .icons{
     grid-column: 5/6;
 }
+
+@media (max-width: 600px) {
+ .footer{
+    grid-template-columns: minmax(50px, auto) minmax(5px, auto) minmax(50px, auto) minmax(5px, auto) minmax(50px, auto);
+ }
+ 
+ .instagram{
+    border-radius: 10px;
+}
+
+ .icon{
+    width: 30px;
+ }
+}
