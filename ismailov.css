@@ -218,6 +218,10 @@ li{
     .video{
         min-height: 415px;
     }
+
+    .opacity-for-about .bg-vertical  {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 600px) {
