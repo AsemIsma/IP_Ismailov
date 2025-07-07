@@ -105,6 +105,20 @@ li{
     background-color: rgba(61, 66, 120, 0.521);
 }
 
+.photo-1C{
+  transition: transform 2s;
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  right: 0;
+  width: 100px;
+}
+
+.photo-1C:hover{
+  transform: rotate(360deg);
+}
+
 .opacity-for-about .about-main-text {
     color: oklch(98.4% 0.003 247.858);
     top: 35%;
