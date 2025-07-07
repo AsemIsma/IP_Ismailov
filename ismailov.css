@@ -53,10 +53,11 @@ li{
   display: none;
   position: absolute;
   max-width: 105px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-content a {
+  z-index: 2;
   font-size: 15px;
   border: solid 1px black;
   display: block;
@@ -90,11 +91,10 @@ li{
     grid-column: 1/6;
     margin-bottom: 15px;
     text-align: center;
-    padding-bottom: 380px;
+    padding-bottom: 480px;
 }
 
 .about{ 
-    margin-top: -30px;
     height: 80%; 
     background-image: url("https://s.26-2.ru/images/preview/600x400/b43e8c60ffb46d9e696100ed551b3f57.jpg");
     background-size: cover;
@@ -107,11 +107,10 @@ li{
 
 .photo-1C{
   transition: transform 2s;
-  position: absolute;
+  float: right;
   margin-top: 20px;
   margin-right: 20px;
   border-radius: 50%;
-  right: 0;
   width: 100px;
 }
 
@@ -121,16 +120,18 @@ li{
 
 .opacity-for-about .about-main-text {
     color: oklch(98.4% 0.003 247.858);
-    top: 35%;
-    bottom: 45%;
     font-size: 30px;
     font-weight: 900;
-    position: relative;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .opacity-for-about .bg-vertical {
     margin: 0px;
-    font-size: 30px;
+    font-size: 27px;
     position: absolute;
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -219,8 +220,16 @@ li{
         min-height: 415px;
     }
 
+    .opacity-for-about .about-main-text {
+        top: 35%;
+    }
+
     .opacity-for-about .bg-vertical  {
-        font-size: 26px;
+        font-size: 25px;
+    }
+
+    .introdaction{
+        padding-bottom: 380px;
     }
 }
 
@@ -233,7 +242,7 @@ li{
      .introdaction {
         grid-row: 1/3;
         grid-column: 1/4;
-        padding-bottom: 80px;
+        padding-bottom: 420px;
      }
 
      .about{
