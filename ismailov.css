@@ -6,6 +6,10 @@ body{
     scroll-behavior: smooth;
 }
 
+p , li{
+    font-size: 1.2em;
+}
+
 li{
     list-style: none;
 }
@@ -144,12 +148,30 @@ li{
 }
 
 .courses{
-    border: solid oklch(44.6% 0.043 257.281) 1px;
-    padding: 0px 15px;
-    border-radius: 15px;
     grid-column: 2/3;
     grid-row: 2/5;
     scroll-margin-top: 60px;
+}
+
+.centered{
+    text-align: center;
+}
+
+h3{
+    padding: 15px 2px;
+    text-align: center;
+    margin: 0;
+}
+
+.course-balance{
+    border-radius: 15px;
+    border: solid oklch(44.6% 0.043 257.281) 1px;
+    margin-bottom: 5px;    
+}
+
+.course-nalog{
+    border-radius: 15px;
+    border: solid oklch(44.6% 0.043 257.281) 1px;
 }
 
 .soprovagdenie{
@@ -215,7 +237,15 @@ li{
     text-align: center;
 }
 
+.box p {
+    padding-left: 15px;
+}
+
 @media (max-width: 786px) {
+    p{
+        font-size: 1em;
+    }
+
     .video{
         min-height: 415px;
     }
