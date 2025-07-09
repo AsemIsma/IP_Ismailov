@@ -245,6 +245,9 @@ h3{
     #logo{
         font-size: 25px;
     }
+    .opacity-for-about .bg-vertical {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 321px) {
