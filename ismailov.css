@@ -249,6 +249,10 @@ h3{
     body{
         font-size: 1.2em;
     }
+
+    .opacity-for-about .about-main-text{
+        top: 35%;
+    }
 }
 
 @media (max-width: 786px) {
