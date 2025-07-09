@@ -413,3 +413,12 @@ h3{
     border-radius: 5px;
     }
 }
+
+@media (max-width: 307px) {
+    .footer{
+    grid-template-columns: minmax(10px, auto) minmax(5px, auto) minmax(10px, auto) minmax(5px, auto) minmax(30px, auto);
+    }
+    .footer{
+        font-size: 0.4em;
+    }
+}
