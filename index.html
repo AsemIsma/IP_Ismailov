@@ -16,17 +16,22 @@
 <body>
     <header class="header">
       <a id="logo" href="https://ip-ismailov.onrender.com/">IP Ismailov</a>  
+      <!-- Language Switcher Button -->
+        <div class="language-switcher">
+        <button class="btn-lang" onclick="switchLanguage('kz')">Қаз</button>
+        <button class="btn-lang" onclick="switchLanguage('ru')">Рус</button>
+        </div>
       <!-- add fallout list -->
        <div class="dropdown">
             <button class="dropbtn">Меню</button>
             <div class="dropdown-content">
-                <a href="#">Главное</a>
-                <a href="#courses">Курсы по бухгалтерии</a>
-                <a href="#soprovagdenie">Бухгалтерское сопровождение</a>
-                <a href="#consultation">Консультация</a>
-                <a href="#one-c-courses">Курсы по 1С</a>
-                <a href="#comp-gram-course">Курс по Компьютерной грамотности</a>
-                <a href="#footer">Контакты</a>
+                <a href="#" data-i18n="toStart">Главное</a>
+                <a href="#courses" data-i18n="accountCourse">Курсы по бухгалтерии</a>
+                <a href="#soprovagdenie"data-i18n="soprovag">Бухгалтерское сопровождение</a>
+                <a href="#consultation" data-i18n="consulta">Консультация</a>
+                <a href="#one-c-courses" data-i18n="course1C">Курсы по 1С</a>
+                <a href="#comp-gram-course" data-i18n="compGramCourse">Курс по Компьютерной грамотности</a>
+                <a href="#footer" data-i18n="contact">Контакты</a>
         </div>
 </div>
     </header>
@@ -80,7 +85,7 @@
 
         <div class="course-nalog box">
             <div>
-                <h3>Курс «Налогообложение» на сквазном примере в 1С — 39 000 тг</h3> 
+                <h3>Курс «Налогообложение» в 1С на сквазном примере — 39 000 тг</h3> 
                 <p>В рамках курса вы научитесь заполнять следующие формы:</p>
             </div>
         
