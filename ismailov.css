@@ -326,6 +326,9 @@ h3{
         grid-column: 2/3;
         grid-row: 14/15;
      }
+     .opacity-for-about .about-main-text {
+        font-size: 1.9em;
+    }
 }
 
 @media (max-width: 409px) {
@@ -343,6 +346,9 @@ h3{
 @media (max-width: 375px) {
     #logo{
         font-size: 17px;
+    }
+    .opacity-for-about .about-main-text {
+        font-size: 0.8em;
     }
 }
 
