@@ -57,6 +57,7 @@ li{
 .btn-lang:hover{
     background-color: oklch(37.2% 0.044 257.287);
     color: oklch(98.4% 0.003 247.858);
+    cursor: pointer;
 }
 
 .dropdown {
@@ -251,6 +252,7 @@ h3{
 
 .box:hover{
     background-color: rgba(98, 116, 142, 0.193);
+    cursor: pointer;
 }
 
 .box h2{
