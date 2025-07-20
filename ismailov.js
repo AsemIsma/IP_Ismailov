@@ -10,6 +10,7 @@
     bgVer: "Бухгалтерия#1C#Сүйемелдеу#Курсылар",
     aboutMainText: "Алматыдағы бухгалтерлік қызмет",
     videoName: '«Негізінен теңгерімге дейін» курсына кіріспе сабағы',
+    windowText: "Бізбен байланысыңыз!",
     accCourseTitle: "Бухгалтерия б/а курсылар",
     accCourseFotmat: "Курстар онлайн және оффлайн пішімінде жүргізіледі.",
     accCourseNalogCodecs: 'Курс мазмұны ҚР Жаңа Салық кодексіне сәйкес келеді.',
@@ -54,6 +55,7 @@
     bgVer: "Бухгалтерия#1C#Сопроваждение#Курсы",
     aboutMainText: "Бухгалтерское обслуживание в Алмате",
     videoName: 'Вводный урок к курсу "от Азов до Баланса"',
+    windowText: "Связаться с нами!",
     accCourseTitle: "Курсы по бухгалтерии",
     accCourseFotmat: "Курсы проводяться в онлайн и оффлайн формате.",
     accCourseNalogCodecs:'Содержание курса соответсвует "Новому Налоговому Кодексу РК".',
@@ -90,11 +92,18 @@
 };
 
 function switchLanguage(lang) {
+  document.body.dataset.i18n = lang;
+
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    el.textContent = translations[lang][key];
+    const translation = translations[lang][key];
+    
+    if (translation) {
+      el.textContent = translation;
+    } else {
+      console.warn(`Missing translation for "${key}" in "${lang}"`);
+    }
   });
-  console.log("shit");
 }
 
 //adding clickability
@@ -107,49 +116,113 @@ const link = document.querySelector(".link");
 document.querySelector(".course-balance").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20От%20Азов%20до%20Баланса%20в%201С?";
+  
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/77717960703?text=Сәлеметсіз%20бе%2C%20маған%201C%20бағдарламасындағы%20%22Негізінен%20теңгерімге%20дейін%22%20курсы%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20От%20Азов%20до%20Баланса%20в%201С?";
+  } else {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20От%20Азов%20до%20Баланса%20в%201С?";
+  }
 });
 
 //course-nalog
 document.querySelector(".course-nalog").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Налогообложение%20в%201С?";
+  
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/77717960703?text=Сәлеметсіз%20бе%2C%20маған%201C%20бағдарламасындағы%20Салық%20салу%20курсы%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Налогообложение%20в%201С?";
+  } else {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Налогообложение%20в%201С?";
+  }
 });
 
 //soprovagdenie
 document.querySelector(".soprovagdenie").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Бухгалтерском%20Сопровождении?";
+  
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/77017862498?text=Сәлеметсіз%20бе%2C%20маған%20Бухгалтерлік%20сүйемелдеу%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Бухгалтерском%20Сопровождении?";
+  } else {
+    link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Бухгалтерском%20Сопровождении?";
+  }
 });
 
 //consultation
 document.querySelector(".consultation").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Консультации?";
+  
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/77017862498?text=Сәлеметсіз%20бе%2C%20маған%20Кеңес%20беру%20қызметі%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Консультации?";
+  } else {
+    link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Консультации?";
+  }
 });
 
 //one-c-programming-course
 document.querySelector(".one-c-programming-course").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Программирования%20в%201С?";
+  
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/87013815305?text=Сәлеметсіз%20бе%2C%20маған%201C%20Бағдарламалау%20курсы%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Программирования%20в%201С?";
+  } else {
+    link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Программирования%20в%201С?";
+  }
 });
 
 //one-c-predpriatie-course
 document.querySelector(".one-c-predpriatie-course").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%201С%20Предприятие?";
+
+  const currentLang = document.body.dataset.i18n;
+
+  if (currentLang === "kz") {
+    link.href = "https://wa.me/87013815305?text=Сәлеметсіз%20бе%2C%20маған%201C%20Кәсіпорын%20курсы%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%201С%20Предприятие?";
+  } else {
+    link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%201С%20Предприятие?";
+  }
 });
 
 //comp-gram-course
 document.querySelector(".comp-gram-course").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
-  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Компьютерная%20грамотность?";
+
+  let currentLang = document.body.dataset.i18n;
+  console.log("Detected language:", currentLang);
+
+  if (currentLang === 'kz') {
+    link.href = "https://wa.me/77717960703?text=Сәлеметсіз%20бе%2C%20маған%20Компьютерлік%20сауаттылық%20курсы%20туралы%20айтып%20бере%20аласыз%20ба%3F";
+  } else if (currentLang === "ru") {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Компьютерная%20грамотность?";
+  } else {
+    link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Компьютерная%20грамотность?";
+  }
 });
 
 document.getElementById("closeModal").addEventListener("click", () => {
