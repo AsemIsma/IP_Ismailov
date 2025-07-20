@@ -97,3 +97,17 @@ function switchLanguage(lang) {
   console.log("shit");
 }
 
+//adding clickability
+
+const modal = document.getElementById("myModal");
+const overlay = document.getElementById("modalOverlay");
+
+document.querySelector(".course-balance").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+});
+
+document.getElementById("closeModal").addEventListener("click", () => {
+    modal.style.display = "none";
+    overlay.style.display = "none";
+  });
