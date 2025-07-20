@@ -101,10 +101,55 @@ function switchLanguage(lang) {
 
 const modal = document.getElementById("myModal");
 const overlay = document.getElementById("modalOverlay");
+const link = document.querySelector(".link");
 
+//balance
 document.querySelector(".course-balance").addEventListener("click", () => {
   modal.style.display = "block";
   overlay.style.display = "block";
+  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20От%20Азов%20до%20Баланса%20в%201С?";
+});
+
+//course-nalog
+document.querySelector(".course-nalog").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Налогообложение%20в%201С?";
+});
+
+//soprovagdenie
+document.querySelector(".soprovagdenie").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Бухгалтерском%20Сопровождении?";
+});
+
+//consultation
+document.querySelector(".consultation").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/77017862498?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20Консультации?";
+});
+
+//one-c-programming-course
+document.querySelector(".one-c-programming-course").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Программирования%20в%201С?";
+});
+
+//one-c-predpriatie-course
+document.querySelector(".one-c-predpriatie-course").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/87013815305?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%201С%20Предприятие?";
+});
+
+//comp-gram-course
+document.querySelector(".comp-gram-course").addEventListener("click", () => {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  link.href = "https://wa.me/77717960703?text=Здравствуйте,%20Можете%20мне%20рассказать%20о%20курсе%20Компьютерная%20грамотность?";
 });
 
 document.getElementById("closeModal").addEventListener("click", () => {
