@@ -42,6 +42,17 @@ li{
     z-index: 999;
   }
 
+  #closeModal{
+    color: aliceblue;
+    background-color: oklch(37.2% 0.044 257.287);
+    float: right;
+  }
+
+  .iconWindow{
+    width: 50px;
+    height: 50px;
+  }
+
 /* menu */
 
 .header{
